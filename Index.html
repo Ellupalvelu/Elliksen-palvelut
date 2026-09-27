@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pihatyöt Kesällä ja Talvella</title>
+    <style>
+        /* Yleiset tyylit ja fontit */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Vuodenaikakortit rinnakkain */
+        .seasons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 5px solid #ccc;
+        }
+
+        .summer-card {
+            border-top-color: #2ecc71; /* Vihreä kesälle */
+        }
+
+        .winter-card {
+            border-top-color: #3498db; /* Sininen talvelle */
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Palvelulistaus */
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #2c3e50;
+            background: #eef2f7;
+            padding: 4px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+
+        /* Yhteystiedot */
+        .contact-box {
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.5rem;
+        }
+
+        .phone-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 15px;
+            transition: background 0.2s ease;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .phone-button:hover {
+            background: #c0392b;
+        }
+
+        /* Huomautus hinnoista */
+        .pricing-note {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pienet Pihatyöt Avuksesi</h1>
+        <p>Reipasta ja luotettavaa apua kodin ja mökin askareisiin ympäri vuoden!</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="seasons">
+            
+            <!-- Kesätyöt -->
+            <div class="card summer-card">
+                <h2>☀️ Kesätyöt</h2>
+                <ul class="service-list">
+                    <li>
+                        <span>Nurmikon leikkaus</span>
+                        <span class="price">25 € / kerta</span>
+                    </li>
+                    <li>
+                        <span>Haravointi ja lehtien keräys</span>
+                        <span class="price">30 € / kerta</span>
+                    </li>
+                    <li>
+                        <span>Muut puutarhatyöt</span>
+                        <span class="price">Kysy tarjous!</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Talvityöt -->
+            <div class="card winter-card">
+                <h2>❄️ Talvityöt</h2>
+                <ul class="service-list">
+                    <li>
+                        <span>Lumen kolaus (pihat ja käytävät)</span>
+                        <span class="price">20 € / kerta</span>
+                    </li>
+                    <li>
+                        <span>Hiekoitus</span>
+                        <span class="price">15 € / kerta</span>
+                    </li>
+                    <li>
+                        <span>Muut talvityöt</span>
+                        <span class="price">Kysy tarjous!</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Yhteystiedot ja Puhelinnumero -->
+        <div class="contact-box">
+            <h3>Ota yhteyttä ja tilaa apua!</h3>
+            <p>Soita tai laita viestiä, niin sovitaan tarkemmin ajankohdasta.</p>
+            <a href="tel:+358451316905" class="phone-button">📞 +358 45 131 6905</a>
+            <p class="pricing-note">* Lopullinen kertasumma voi vaihdella hieman pihan koon mukaan.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
